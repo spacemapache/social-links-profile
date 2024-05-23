@@ -1,14 +1,58 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+}
+body {
+  background-color: black;
+  margin: 0;
+  height: 100vh;
+}
+
 .container {
   text-align: center;
-  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
 
 .profile {
   border: 1px solid black;
-  padding: 100px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  border-radius: 10px;
+  background-color: hsl(0, 1%, 15%);
+  padding: 20px;
+  height: 450px;
+  max-width: 350px;
+}
+
+h1,
+h2,
+h3,
+.social-links a {
+  font-family: var(--main-font);
+}
+
+h1 {
+  color: white;
+  margin-bottom: -10px;
+}
+
+h2 {
+  color: hsl(85, 68%, 58%);
+  font-size: 17px;
+}
+
+h3 {
+  color: hsl(0, 4%, 65%);
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+img {
+  border-radius: 500px;
+  max-width: 20%;
+  user-select: none;
+  margin-top: 10px;
 }
 
 .social-links {
@@ -16,9 +60,18 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .social-links a {
   text-decoration: none;
-  color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  width: 250px;
+  background-color: rgb(72, 70, 70);
+  font-weight: bold;
+  font-size: 14px;
 }
